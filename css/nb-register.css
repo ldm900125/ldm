@@ -1,0 +1,33 @@
+@import "base.css";
+
+/*************************1.register*************************/
+
+.container{
+    width:1000px;
+    height:800px;
+    margin:50px auto 0;
+    background:#F5F5F5;
+}
+.nub-register{
+    width:800px;
+    height:600px;
+    margin:50px auto 0;
+    padding:50px 220px;
+    background:#fff;
+}
+#mobile,#passwordMobile,#email,#passwordEmail{
+    width:360px;
+    height:50px;
+    padding-left: 5px;
+    margin-top:10px;
+}
+
+.buttons>button{
+    width:360px;
+    height:50px;
+    background:#e8380d;
+    font-size:20px;
+    color:#fff;
+    border:none;
+    text-align:center;
+}

@@ -1,0 +1,171 @@
+@import "base.css";
+@import "header.css";
+@import "footer.css";
+
+/*******************************2.VR-camera介绍*****************************/
+#camera-box{
+    /*border:1px solid chartreuse;*/
+    width:100%;
+    padding: 50px 0 80px;
+}
+div.camera-content{
+    width:1170px;
+    margin:0 auto;
+}
+
+/******************2.1 VR-camera-pic****************/
+div.camera-pic{
+    width:565px;
+    min-height:600px;
+    /*border:1px solid red;*/
+    position:relative;
+}
+/*******2.1.1 VR-camera-big*********/
+#medium-div{
+    width:502px;
+    height:502px;
+    margin:0 auto;
+    position:relative;
+    border:1px solid #CCC;
+}
+#medium-div>img{
+    width:500px;
+}
+#medium-div>#mask{
+    position: absolute;
+    z-index: 10;
+    width:200px;
+    height:200px;
+    left:150px;
+    top:150px;
+    background:rgba(123,123,123,0.5);
+    display:none;
+}
+#medium-div>#super-mask{
+    position: absolute;
+    width:500px;
+    height:500px;
+    top:0;
+    left:0;
+    cursor: move;
+    /*border:1px solid red;*/
+}
+#large-div{
+    position: absolute;
+    width:500px;
+    height:500px;
+    top:0;
+    left:532px;
+    background: #fff;
+    border:1px solid #ccc;
+    display:none;
+}
+
+ul.camera-small{
+    width:384px;
+    margin:10px auto 0;
+}
+ul.camera-small>li{
+    float:left;
+    width:86px;
+    height:86px;
+    border:1px solid #CCC;
+    margin-left:10px;
+}
+ul.camera-small>li.selected{
+    border:1px solid #eb4f2c;
+}
+
+ul.camera-small>li>img{
+    width:84px;
+}
+
+/******************2.2 VR-camera-text****************/
+div.camera-text{
+    width:605px;
+    min-height:600px;
+    border:1px solid green;  /*测试*/
+    padding-top:50px;
+    padding-left:30px;
+    color:#000;
+}
+div.camera-text>h1{
+    width:570px;
+    font-size:32px;
+    font-weight: normal;
+    padding-bottom:30px;
+    border-bottom:1px solid #ddd;
+}
+span.light{
+    color:#FF6700;
+}
+.m-top{
+    margin-top:5px;
+}
+div.camera-text>ul{
+    font-size:16px;
+    margin-top:12px;
+    margin-bottom:50px;
+}
+div.camera-text>p{
+    font-size:18px;
+    line-height:30px;
+}
+div.color-chosen{
+    margin-bottom: 65px;
+}
+div.color-chosen>h3{
+    font-size:20px;
+    font-weight: normal;
+}
+div.color-chosen>p{
+    width:176px;
+    height:36px;
+    line-height: 36px;
+    font-size:16px;
+    text-align: center;
+    margin-top:25px;
+    border:1px solid transparent;
+}
+div.color-chosen>p.color-active{
+    border:1px solid #FF6700;
+}
+div.btns{
+    margin-top:50px;
+}
+a.buy{
+    display:inline-block;
+    width:126px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    background:#E8380D;
+    color:#fff;
+    border-radius: 3px;
+}
+a.buy:hover{
+    color:#fff;
+}
+a.favorite{
+    display:inline-block;
+    width:85px;
+    height:28px;
+    text-align: center;
+    line-height: 28px;
+    background:#8FC320;
+    color:#fff;
+    border-radius: 3px;
+    margin-left: 30px;
+}
+a.favorite:hover{
+    color:#E8380D;
+}
+
+/******************3 VR-camera展示****************/
+#camera-display>div{
+    width:1309px;
+    margin:0 auto;
+}
+#camera-display>div>img{
+    width:1309px;
+}

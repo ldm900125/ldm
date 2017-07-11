@@ -1,0 +1,39 @@
+/***********************公共样式***********************/
+body{
+    font-family: "microsoft yahei","微软雅黑",Arial,Helvetica,sans-serif;
+    font-size:14px;
+    color:#666;
+    background: #fff;
+    /*overflow: hidden; 不能给整个body添加，这样右边的滚动条出不来*/
+    /*固定nav-bar*/
+    /*position: relative;*/
+    /*padding-top:64px;*/
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,fieldset,legend,input,button,textarea,area,th,td{
+    margin:0;
+    padding:0;
+}
+ol,li,ul,dl,dt,dd{  list-style:none;  }
+input,button{  outline:none;  }
+a{
+    color:#666;
+    text-decoration: none;
+}
+a:hover{
+    color:#666;
+    text-decoration: none;
+}
+img{  vertical-align:bottom;  }
+*{  box-sizing: border-box;  }
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+.cl:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.cl-top:before{
+    content: "";
+    display: table;
+}

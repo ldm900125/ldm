@@ -1,0 +1,173 @@
+@import "base.css";
+@import "header.css";
+@import "footer.css";
+
+/*******************************2.推荐产品*****************************/
+#main{
+    width:100%;
+    background-color: #fff;
+    padding-top:15px;
+}
+
+/****************2.1 main产品***************/
+div.nb-recommend-pro{
+    width:900px;
+    margin:0 auto;
+    padding-top:10px;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+}
+div.nb-recommend-pro>ul>li{
+    float:left;
+    width:150px;
+    border-bottom: 2px solid transparent;
+}
+div.nb-recommend-pro>ul>li:hover{
+    border-bottom: 2px solid #e8380d;
+}
+div.nb-recommend-pro p{
+    font-size:12px;
+    color:#999;
+    text-align: center;
+    padding-top:4px;
+    padding-bottom:6px;
+}
+
+/**************2.2 大广告****************/
+#ads>a{
+    display:block;
+    width:100%;
+    text-align: center;
+    /*position: absolute;*/
+}
+#ads img{
+    width:1920px;
+    /*position: relative;*/
+    /*left:-290px;*/
+}
+
+
+/*******************************3.promos产品*****************************/
+div.nb-promos{
+    width:1200px;
+    height:450px;
+    margin:0 auto;
+    /*border:1px solid red;*/
+    padding-top:50px;
+}
+div.nb-promos>ul{
+    /*width:100%;*/
+    text-align: center;
+    overflow:hidden;
+}
+
+li.promos-a>a{
+    display: block;
+    width:790px;
+}
+li.promos-a img{
+    width:790px;
+}
+
+li.promos-b>a{
+    display: block;
+    width:400px;
+}
+li.promos-b img{
+    width:400px;
+}
+
+div.figure{
+    margin-bottom:10px;
+}
+div.figure>img{
+    transition: transform 0.5s linear;
+}
+
+div.title h2{
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+}
+div.title p{
+    color:#666;
+    font-size:12px;
+}
+div.title span{
+    display:inline-block;
+    width:106px;
+    height:30px;
+    line-height:30px;
+    color: #333;
+    border:1px solid #e4e4e4;
+    border-radius: 3px;
+    margin-top: 15px;
+    transition: all;
+}
+
+div.nb-promos>ul>li:hover div.figure>img{
+    transform:scale(1.1);
+}
+div.nb-promos>ul>li:hover div.title>span{
+    color: #e83100;
+    border: 1px solid #e83100;
+}
+
+
+/*******************************4.产品列表-菜单*****************************/
+#product-list{
+    width:1100px;
+    margin:100px auto 0;
+    line-height: 50px;
+}
+.all-product,.all-type{
+    border-bottom:1px solid #e4e4e4 ;
+}
+.all-product>ul>li,.all-type>ul>li,.filter-condition>ul>li{
+    float: left;
+    margin-left:15px;
+}
+.all-product>ul>li>b,.all-type>ul>li>b,.filter-condition>ul>li>b{
+    border-left:1px solid #e4e4e4;
+    margin-right:15px;
+}
+
+.all-product>ul>li>a:hover,.all-type>ul>li>a:hover,.filter-condition>ul>li>a:hover{
+    color: #e83100;
+}
+
+
+
+
+/*******************************5.产品列表-图片*****************************/
+#product-box{
+    width:1100px;
+    margin:100px auto 0;
+    /*border:1px solid red;*/
+}
+ul.nb-products{
+    width:1100px;
+    margin:20px auto 50px;
+}
+ul.nb-products>li{
+    float:left;
+    width:25%;
+    text-align:center;
+    font-size:12px;
+    height:300px;
+    margin-bottom:20px;
+    /*border:1px solid royalblue;*/
+}
+ul.nb-products img{
+    width:210px;
+    transition: transform 0.5s linear;
+}
+ul.nb-products p.hover{
+    margin:15px 0 8px;
+}
+ul.nb-products>li:hover img{
+    transform:scale(1.1);
+}
+ul.nb-products>li:hover p.hover{
+    color:#e8380d;
+}
